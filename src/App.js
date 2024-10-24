@@ -6,8 +6,6 @@ import Compare from "./pages/Compare";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Watchlist from "./pages/Watchlist";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
 function App() {
@@ -58,7 +56,6 @@ function App() {
     <div className="App">
       <div className="cursor" id="cursor" />
       <div className="cursor-pointer" id="cursor-pointer" />
-      <ToastContainer />
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>
@@ -75,3 +72,4 @@ function App() {
 }
 
 export default App;
+
